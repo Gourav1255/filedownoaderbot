@@ -13,9 +13,9 @@ def is_enabled(value, default):
 # Bot information
 PORT = environ.get("PORT", "8080")
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '26813710'))
-API_HASH = environ.get('API_HASH', '56ded95eda29b601363e3093a54ba42b')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5773148389:AAGOjtMB-UMaM7Zd4LF1-9_MwqYsOmGULRw")
+API_ID = int(environ.get('API_ID', '19751208'))
+API_HASH = environ.get('API_HASH', '7ee46e0888432fad23173820d4caddf2')
+BOT_TOKEN = environ.get('BOT_TOKEN', "5722573121:AAEN9PUBAxZzuFDJ8iiyDZtwsnSCuUCY7hU")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -27,12 +27,12 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/8ee413afc32e5b393e
 NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/07c14729659c7c2b99f5a.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '884919097').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001807508263').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1898448702').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001655479466').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('https://t.me/netflix_hindi_movies_4k')
-auth_grp = environ.get('https://t.me/netflix_hindi_movies_4k')
+auth_channel = environ.get('https://t.me/mxplayerfreemovies')
+auth_grp = environ.get('https://t.me/mxplayerfreemovies')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
@@ -42,20 +42,20 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Netflixv5Bot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files_v5')
 
 # Channel Button Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/requestluciferdownload')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/netflix_hindi_movies_4k')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/sohan_supportnetflix_hindi')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/HDMOVIES143')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/mxplayerfreemovies')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/mxplayerfreemovies')
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 
 # Custom Chats
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001495446942))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001795037048))
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001807508263))
 FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/+rsU63u4T3ew1N2I1')
 HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/Netflix_hindi_movies_4k/341')
 
 # Log Channels
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001852774435))
-RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001852774435))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001319386280))
+RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001319386280))
 
 # Bot Options
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
@@ -85,8 +85,8 @@ SPL_DELETE_TIME = int(environ.get('SPL_DELETE_TIME', 15))
 
 # URL SHORTNER
 
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'mdisklink.link')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'a2889bef57275bd3f90a0be9be268026c8440f21')
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'Shareus.io')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'w2FFDARFXNM2oy402FiKE0GifKb2')
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
